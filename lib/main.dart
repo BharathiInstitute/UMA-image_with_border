@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+// image with border
 void main() => runApp(const MyApp());
 
 class MyApp extends StatelessWidget {
@@ -11,7 +11,21 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(title: const Text('Asset Image Example')),
         body: Center(
-          child: Image.asset('assets/border.jpg'),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Image.asset('assets/border.jpg'),
+              const SizedBox(height: 20),
+              const Text(
+                'Beautiful Image with Border',
+                style: TextStyle(
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.blue,
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );

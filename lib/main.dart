@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 // image with border
+//borders
 void main() => runApp(const MyApp());
 
 class MyApp extends StatelessWidget {
